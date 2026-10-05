@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=contain">
+<title>draxsensi</title>
+<meta name="description" content="VOCÊ TEM 7 DIAS DE GARANTIA TOTAL CASO NÃO GOSTE DO PAINEL.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700;800&family=Poppins:wght@400;600;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+<style>
+@font-face{font-family:"Morganite Bold";src:url("https://framerusercontent.com/assets/FumXN1eyVNlHdpdynRJNZhYnfPs.woff2");font-display:swap;font-style:normal;font-weight:700}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{background:#050508}
+body{font-family:"Poppins",Arial,sans-serif;color:#fff;min-height:100vh}
+.bg-glow{position:fixed;border-radius:50%;filter:blur(90px);z-index:0;pointer-events:none}
+.bg-glow.top{width:420px;height:420px;top:-140px;left:50%;margin-left:-210px;background:radial-gradient(circle,rgba(103,62,210,.55),rgba(103,62,210,0) 70%);animation:blob 7s ease-in-out infinite}
+.bg-glow.bottom{width:520px;height:520px;bottom:-220px;left:50%;margin-left:-260px;background:radial-gradient(circle,rgba(103,62,210,.35),rgba(103,62,210,0) 70%);animation:blob 9s ease-in-out infinite reverse}
+@keyframes blob{0%,100%{transform:scale(1);opacity:.9}50%{transform:scale(1.12);opacity:1}}
+@keyframes bg-move{from{transform:scale(1) translate(0,0)}to{transform:scale(1.15) translate(-2%,2%)}}
+@keyframes drift{from{left:-6%;opacity:0}10%{opacity:.9}88%{opacity:.9}to{left:106%;opacity:0}}
+.spark{position:fixed;z-index:0;border-radius:50%;pointer-events:none;filter:blur(5px)}
+.spark.s1{width:14px;height:14px;background:rgba(255,255,255,.85);top:18%;animation:drift 9s linear infinite}
+.spark.s2{width:10px;height:10px;background:rgba(160,120,255,.9);top:55%;animation:drift 12s linear infinite 2s}
+.spark.s3{width:18px;height:18px;background:rgba(255,255,255,.6);top:78%;animation:drift 14s linear infinite 5s}
+.hero-bg{position:fixed;inset:0;z-index:0;background:url("https://cdn.beacons.ai/user_content/NWN4OAem38ajEHSu3SNWAOrWNaH3/referenced_images/ffea4c59-138e-4fbf-b527-2deaa1dd6ee8__user_content/NWN4OAem38ajEHSu3SNWAOrWNaH3/backgrounds/home/mobile_background_draxsensi.png?t=1789616736.0396144") center/cover no-repeat;pointer-events:none}
+.bg-shade{position:fixed;inset:0;z-index:0;background:rgba(5,5,8,.35);pointer-events:none}
+@keyframes fade-up{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:none}}
+@keyframes float-y{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+@keyframes arrow-nudge{0%,100%{transform:translateX(0)}50%{transform:translateX(4px)}}
+@keyframes luz{0%{left:-80px;opacity:0}12%{opacity:1}60%,100%{left:130%;opacity:0}}
+.wrap{position:relative;z-index:1;max-width:430px;margin:0 auto;padding:76px 20px 100px}
+.hero{text-align:center}
+.avatar{width:96px;height:96px;border-radius:50%;border:2px solid #fff;object-fit:cover;object-position:50% 30%;display:block;margin:0 auto}
+.hero h1{font-family:"Montserrat",sans-serif;font-weight:700;font-size:22px;line-height:1.2;text-align:center;color:#fff;text-shadow:rgba(0,0,0,.25) 0px .5px 1px;padding-left:20px;padding-right:20px;margin-top:12px}
+.hero .sub{font-family:"Poppins",sans-serif;font-size:12px;font-weight:600;margin-top:8px;margin-bottom:8px;padding:0 40px;text-align:center;color:#fff;text-shadow:rgba(0,0,0,.25) 0px .5px 1px}
+section{margin-top:26px}
+.sec-t{font-family:"Poppins",sans-serif;font-size:18px;font-weight:600;line-height:1.1;letter-spacing:-.42px;text-align:center;color:rgb(255,255,254)}
+.video{margin-top:12px;border-radius:12px;overflow:hidden}
+.video iframe{display:block;width:100%;aspect-ratio:16/9;border:0;overflow:hidden}
+.links{margin:14px 0 0;display:flex;flex-direction:column;gap:16px;padding:0}
+.btn{position:relative;display:flex;align-items:center;gap:0;width:100%;background-color:rgb(0,0,0);border:2px solid rgba(255,255,255,0);border-radius:10px;padding:8px;min-height:65px;text-decoration:none;color:#fff;overflow:hidden;box-shadow:none;font-family:"Poppins",sans-serif;font-size:15px;text-transform:none;transition:opacity .6s ease}.btn:hover{transform:none}.btn:active{transform:none}
+.links .btn:nth-child(2){animation-delay:.1s}
+.links .btn:nth-child(3){animation-delay:.2s}
+.links .btn:nth-child(4){animation-delay:.3s}
+.btn img{width:45px;height:45px;aspect-ratio:1;border-radius:10px;object-fit:cover;flex-shrink:0;overflow:visible}
+.btn svg.btn-icon{width:48px;height:48px;flex-shrink:0}
+.links .btn:nth-child(2) img,.links .btn:nth-child(2) svg.btn-icon{animation-delay:.4s}
+.links .btn:nth-child(3) img,.links .btn:nth-child(3) svg.btn-icon{animation-delay:.8s}
+.links .btn:nth-child(4) img,.links .btn:nth-child(4) svg.btn-icon{animation-delay:1.2s}
+.btn-label{flex:1;font-family:"Poppins",sans-serif;font-size:15px;font-weight:400;white-space:pre-wrap;text-align:left;min-width:0}
+.btn-arrow{flex-shrink:0;width:1px;height:1px;image-rendering:pixelated;background-size:100% 100%;background-image:url('data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 1 1%22 overflow=%22visible%22><path d=%22M 1 0.5 C 1 0.224 0.776 0 0.5 0 C 0.224 0 0 0.224 0 0.5 C 0 0.776 0.224 1 0.5 1 C 0.776 1 1 0.776 1 0.5 Z M 0.394 0.738 L 0.245 0.588 C 0.222 0.565 0.208 0.533 0.208 0.5 C 0.208 0.467 0.222 0.435 0.245 0.412 L 0.394 0.262 L 0.395 0.261 C 0.406 0.25 0.422 0.246 0.436 0.25 C 0.451 0.254 0.462 0.266 0.466 0.281 C 0.469 0.295 0.464 0.311 0.453 0.321 L 0.316 0.458 L 0.75 0.458 C 0.773 0.458 0.792 0.477 0.792 0.5 C 0.792 0.523 0.773 0.541 0.75 0.541 L 0.316 0.542 L 0.453 0.679 C 0.464 0.689 0.468 0.705 0.465 0.719 C 0.461 0.734 0.449 0.745 0.435 0.749 C 0.42 0.753 0.405 0.749 0.394 0.738 Z%22 fill=%22rgb(255, 255, 255)%22></path></svg>');transform:rotate(180deg);opacity:0;overflow:hidden;transition:width .25s ease,height .25s ease,opacity .25s ease}
+.btn:hover .btn-arrow,.btn:active .btn-arrow,.btn:focus-visible .btn-arrow{width:32px;height:32px;opacity:1}
+.btn-arrow svg{display:none}
+.luz{position:absolute;top:-66px;bottom:-42px;width:53px;left:-80px;z-index:10;background:linear-gradient(180deg,#fff 0%,rgba(255,255,255,0) 100%);box-shadow:0 0 12px rgba(255,255,255,.4);transform:rotate(30deg);animation:luz 3.4s ease-in-out infinite;pointer-events:none;overflow:hidden}
+.links .btn:nth-child(2) .luz{animation-delay:.4s}
+.links .btn:nth-child(3) .luz{animation-delay:.8s}
+.links .btn:nth-child(4) .luz{animation-delay:1.2s}
+.divider{height:1px;background:#fff;margin:28px 0 0}
+.banner{margin-top:14px}
+.banner img{display:block;width:100%;aspect-ratio:3/1;object-fit:cover;border-radius:10px}
+.disclaimer{position:relative;z-index:1;max-width:350px;margin:20px auto 0;background:#e63535;border-radius:20px;padding:20px;text-align:left;box-shadow:0 10px 30px rgba(230,53,53,.35)}
+.disclaimer .d-t{font-size:20px;font-weight:800;line-height:1em;letter-spacing:-.03em}
+.disclaimer .d-arrow{display:block;width:87px;height:87px;margin:6px auto;animation:arrow-bob 1.8s ease-in-out infinite}
+@keyframes arrow-bob{0%,100%{transform:translateY(0)}50%{transform:translateY(7px)}}
+.disclaimer .d-s{display:block;background:#fff;padding:5px;font-size:10px;font-style:italic;font-weight:500;letter-spacing:-.03em;line-height:1em;text-align:center;color:#0e0a1c}
+.disclaimer .d-s span{font-weight:700}
+footer p{margin:0}
+footer .f-logo-img{width:80px;height:auto;display:block;object-fit:contain;background:transparent}
+footer{margin:34px 0 0;padding:10px 0 0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;text-align:center;font-family:"Poppins",sans-serif;font-size:10px;font-weight:400;line-height:1.4;color:rgba(255,255,255,.7);background:transparent;border:none;box-shadow:none}
+@media (min-width:810px){footer{flex-direction:row;gap:11px}}
+@media (prefers-reduced-motion:reduce){.bg-glow,.hero-bg,.spark,.hero,section,.btn,.btn img,.btn svg.btn-icon,.btn-arrow,.luz,.disclaimer .d-arrow{animation:none !important}}
+</style>
+</head>
+<body>
+<div class="hero-bg"></div>
+<div class="wrap">
+<header class="hero">
+<img class="avatar" src="https://cdn.beacons.ai/user_content/NWN4OAem38ajEHSu3SNWAOrWNaH3/referenced_images/48befdd9-fde7-4ec3-88a3-0c025c1598a7__user_content/NWN4OAem38ajEHSu3SNWAOrWNaH3/profile_draxsensi__bef0aeee-6265-426c-acf1-9cd1231265b2.webp?t=1789616991359" alt="Drax Sensi" width="96" height="96">
+<h1>PAINÉIS DO DRAX SENSI</h1>
+<p class="sub">VOCÊ TEM 7 DIAS DE GARANTIA TOTAL CASO NÃO GOSTE DO PAINEL.</p>
+</header>
+<section class="rv">
+<div class="video"><iframe aria-label="video iframe" title="url" class="YoutubeVideo" src="https://www.youtube.com/embed/cfBqKbqRUNA" frameborder="0" scrolling="no" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" style="overflow: hidden;"></iframe></div>
+</section>
+<section class="rv">
+<p class="sec-t">ESCOLHA SEU PAINEL</p>
+<div class="links">
+<a class="btn rv" href="https://ggcheckout.app/checkout/v5/cAX6dFYBqQiZ8HlG2jO2" rel="noopener"><div style="margin-right:8px;display:flex;align-items:center;justify-content:center;width:56px;min-width:56px"><img width="45" height="45" alt="" src="https://cdn.beacons.ai/user_content/NWN4OAem38ajEHSu3SNWAOrWNaH3/referenced_images/39ce1645-ff26-496f-92fe-3984069c77ac__link-in-bio__links-block__home__e2bf2859-e033-42c9-b4bf-25dd2d6b54e1__f07acae8-a1b2-4067-805e-3980782f3da1__929228a2-8a55-4296-957e-2f69764fe3da.webp?t=1790991574828" style="object-fit:cover;border-radius:10px"></div><span class="btn-label">AUXÍLIO ANDROID</span></a>
+<a class="btn rv" href="https://ggcheckout.app/checkout/v5/VLFyZAfpj21puJJXmydL" target="_blank" rel="noopener"><div style="margin-right:8px;display:flex;align-items:center;justify-content:center;width:56px;min-width:56px"><img width="45" height="45" alt="" src="https://cdn.beacons.ai/user_content/NWN4OAem38ajEHSu3SNWAOrWNaH3/referenced_images/88a6045e-6a9d-4245-9d32-db3399f3cefb__link-in-bio__links-block__home__e2bf2859-e033-42c9-b4bf-25dd2d6b54e1__df3641b2-5695-47ca-b84a-15e6119979d8__7a4864c0-da75-46fe-aac5-1034423ff75e.webp?t=1790991638380" style="object-fit:cover;border-radius:10px"></div><span class="btn-label">AUXÍLIO IPHONE</span></a>
+</div>
+</section>
+<div class="divider"></div>
+<section class="rv">
+<div class="links" style="margin-top:12px">
+<a class="btn rv" href="https://discord.gg/mP5bq9rD7" target="_blank" rel="noopener"><div style="margin-right:8px;display:flex;align-items:center;justify-content:center;width:56px;min-width:56px"><img width="45" height="45" alt="" src="https://cdn.beacons.ai/user_content/NWN4OAem38ajEHSu3SNWAOrWNaH3/referenced_images/17198041-8756-4880-b1bb-2a476ef2b59a__link-in-bio__links-block__home__fb74d57d-955e-4386-9ddf-46126f844367__ed843a16-a0f5-41c3-a5c5-ddcc20ac5387__0ae313b8-0fa7-4b68-a01d-4538aed0bacf.webp?t=1790991678041" style="object-fit:cover;border-radius:10px"></div><span class="btn-label">SUPORTE 24 HORAS</span></a>
+</div>
+</section>
+<section class="banner rv">
+<div class="links" style="margin-top:12px"><img src="https://cdn.beacons.ai/user_content/yF688iEh2lSjDdxuJEexJWYZCr32/referenced_images/5c05538a-2729-4e4f-a462-29085bce83fe__link-in-bio__image-block__home__4119f5c4-f89a-4b35-9f78-f6586a728231__1a91fcbe-c40a-4829-a244-1ec1336b6248.jpg?t=1773043029732" alt="" style="width:100%;aspect-ratio:3/1;object-fit:cover;border-radius:10px"></div>
+</section>
+<footer><p>Drax Sensi © 2026 Todos os direitos reservados.</p></footer>
+</div>
+<style data-nosso="sem-zoom-nosso">html,body{touch-action:pan-x pan-y}</style><script data-nosso="sem-zoom-nosso">(function(){document.addEventListener('gesturestart',function(e){e.preventDefault()});document.addEventListener('wheel',function(e){if(e.ctrlKey)e.preventDefault()},{passive:false});document.addEventListener('keydown',function(e){if((e.ctrlKey||e.metaKey)&&['+','-','=','0'].indexOf(e.key)!==-1)e.preventDefault()})})();</script><div id="checkout-overlay"><iframe title="Checkout" src="about:blank"></iframe></div><style data-nosso="mesmo-link-nosso">#checkout-overlay{position:fixed;inset:0;z-index:99999;display:none;background:#f1f5f5}#checkout-overlay.open{display:block}#checkout-overlay iframe{width:100%;height:100%;border:0;display:block}</style><script data-nosso="trava-clique-nosso">(function(){function open(URL){var ov=document.getElementById("checkout-overlay");var fr=ov.querySelector("iframe");if(fr.getAttribute("src")!==URL)fr.setAttribute("src",URL);ov.classList.add("open");try{document.documentElement.style.overflow="hidden";}catch(e){}}document.addEventListener("click",function(e){var t=e.target;if(!t||!t.closest)return;var a=t.closest('a.btn[href*="cAX6dFYBqQiZ8HlG2jO2"]');if(a){e.preventDefault();open("checkout-lastlink-drax.html");return;}var b=t.closest('a.btn[href*="VLFyZAfpj21puJJXmydL"]');if(b){e.preventDefault();open("checkout-lastlink-iphone.html");return;}},true);})();</script></body>
+</html>
